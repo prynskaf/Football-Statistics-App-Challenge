@@ -1,0 +1,18 @@
+<!-- topPlayers.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Top Players</title>
+  <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Top Players</h1>
+  <ul>
+    <% topPlayers.forEach(player => { %>
+      <li><%= player.name %> - Overall Rating: <%= player.overallRating %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
